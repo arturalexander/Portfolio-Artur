@@ -17,13 +17,11 @@
 				"build": {
 					"builder": "@angular-devkit/build-angular:application",
 					"options": {
-						"outputPath": {
-              "base": "docs"
-            },
-            "index": "src/index.html",
+						"outputPath": "docs",
+						"index": "src/index.html",
 						"polyfills": [
-              "src/polyfills.ts"
-            ],
+							"src/polyfills.ts"
+						],
 						"tsConfig": "tsconfig.app.json",
 						"assets": [
 							"src/favicon.ico",
@@ -54,11 +52,12 @@
 							"src/assets/js/particles.min.js",
 							"src/assets/js/vanilla-tilt.min.js"
 						],
-            "serviceWorker": "ngsw-config.json",
-            "browser": "src/main.ts"
+						"serviceWorker": "ngsw-config.json",
+						"browser": "src/main.ts"
 					},
 					"configurations": {
 						"production": {
+							"baseHref": "/Portfolio-Artur/",
 							"budgets": [
 								{
 									"type": "initial",
@@ -79,8 +78,8 @@
 							],
 							"outputHashing": "all"
 						},
-            "development": {
-              "optimization": false,
+						"development": {
+							"optimization": false,
 							"extractLicenses": false,
 							"sourceMap": true,
 							"namedChunks": true
@@ -91,19 +90,19 @@
 				"serve": {
 					"builder": "@angular-devkit/build-angular:dev-server",
 					"configurations": {
-            "production": {
-              "buildTarget": "arturalexander:build:production"
+						"production": {
+							"buildTarget": "arturalexander:build:production"
 						},
-            "development": {
-              "buildTarget": "arturalexander:build:development"
+						"development": {
+							"buildTarget": "arturalexander:build:development"
 						}
 					},
 					"defaultConfiguration": "development"
 				},
 				"extract-i18n": {
 					"builder": "@angular-devkit/build-angular:extract-i18n",
-          "options": {
-            "buildTarget": "arturalexander:build"
+					"options": {
+						"buildTarget": "arturalexander:build"
 					}
 				},
 				"test": {
@@ -126,7 +125,9 @@
 				},
 				"deploy": {
 					"builder": "angular-cli-ghpages:deploy",
-					"options": {}
+					"options": {
+						"baseHref": "/Portfolio-Artur/"
+					}
 				}
 			}
 		}
