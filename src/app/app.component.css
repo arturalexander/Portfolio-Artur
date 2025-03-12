@@ -1,0 +1,12 @@
+
+
+/* Canvas para la mano virtual */
+#handCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none; /* No bloquear clics */
+  z-index: 9998;       /* Debajo del fingerCursor si quieres */
+}

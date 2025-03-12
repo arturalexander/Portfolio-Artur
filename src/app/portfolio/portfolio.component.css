@@ -1,0 +1,121 @@
+.spacing {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+  
+  .txt-bg-portfolio::before {
+    content: "My Portfolio";
+  }
+  
+  .item-box {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    border-radius: 5px;
+  }
+  
+  /* 
+     Al hacer hover con el ratón, focus o aplicar la clase hand-hover,
+     se desplaza la máscara (.item-mask) para que sea visible
+  */
+  .item-box:hover .item-mask,
+  .item-box:focus .item-mask,
+  .item-box.hand-hover .item-mask {
+    transform: translateX(0);
+    visibility: visible;
+  }
+  
+  /*
+     Se muestra la caption (.item-caption) al hacer hover, focus o hand-hover
+  */
+  .item-box:hover .item-mask .item-caption,
+  .item-box:focus .item-mask .item-caption,
+  .item-box.hand-hover .item-mask .item-caption {
+    opacity: 1;
+  }
+  
+  /*
+     Mueve la imagen (.item-container) a la derecha al hacer hover/focus/hand-hover
+  */
+  .item-box:hover .item-container,
+  .item-box:focus .item-container,
+  .item-box.hand-hover .item-container {
+    transform: translateX(100%);
+    transition: all 0.5s ease-in-out 0s;
+    width: 100%;
+  }
+  
+  /* 
+     Configuración base de la imagen (item-container)
+  */
+  .item-container {
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    width: 100%;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+  }
+  
+  /* 
+     La máscara (item-mask) comienza oculta y desplazada a la izquierda
+  */
+  .item-mask {
+    background: #242a35; /* color de fondo */
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transform: translateX(-100%);
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+  }
+  
+  /*
+     Texto dentro de la máscara
+  */
+  .item-mask p {
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin: 0;
+    color: #fff;
+  }
+  
+  /*
+     La caption se posiciona en el centro vertical
+     y aparece con transición de opacidad
+  */
+  .item-mask .item-caption {
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    left: 0;
+    right: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    opacity: 0;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+  }
+  
+  /* 
+     Ajuste de fuente para pantallas pequeñas 
+  */
+  @media (min-width: 200px) and (max-width: 768px) {
+    .txt-bg-portfolio::before {
+      font-size: 45px;
+    }
+  }
+  

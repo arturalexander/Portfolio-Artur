@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://arturalexander.github.io/sitemap_index.xml
