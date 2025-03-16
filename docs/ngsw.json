@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1742152848258,
+  "timestamp": 1742153741594,
   "index": "/Portfolio-Artur/index.html",
   "assetGroups": [
     {
@@ -11,12 +11,12 @@
         "ignoreVary": true
       },
       "urls": [
-        "/Portfolio-Artur/chunk-7O4BMHTN.js",
+        "/Portfolio-Artur/chunk-4CH6NPGM.js",
         "/Portfolio-Artur/chunk-IVZRK4VD.js",
         "/Portfolio-Artur/chunk-Q6STROUP.js",
         "/Portfolio-Artur/favicon.ico",
         "/Portfolio-Artur/index.html",
-        "/Portfolio-Artur/main-IV34J6GZ.js",
+        "/Portfolio-Artur/main-VARS7VBC.js",
         "/Portfolio-Artur/polyfills-EONH2QZO.js",
         "/Portfolio-Artur/scripts-33S2GZ2B.js",
         "/Portfolio-Artur/styles-EOAKSHM6.css"
@@ -165,14 +165,14 @@
     "/Portfolio-Artur/assets/js/typed.min.js": "30d71da324a6f531b487fe911a77e800568c8812",
     "/Portfolio-Artur/assets/js/vanilla-tilt.min.js": "54fbe042af66347ac7e0dca26afec503d878dab6",
     "/Portfolio-Artur/assets/js/wow.min.js": "433ecbea2eac37104c8e924e781caa5aadfbd587",
-    "/Portfolio-Artur/chunk-7O4BMHTN.js": "13c8d3ab4e8ece895530ed6244a91b2fbb2d2d9b",
+    "/Portfolio-Artur/chunk-4CH6NPGM.js": "a9cbbe9a2a31f78466ff0b65dc94e67c133f2888",
     "/Portfolio-Artur/chunk-IVZRK4VD.js": "a0f79b6d5f6f62d69f4072b4df8d1caea0b67a77",
     "/Portfolio-Artur/chunk-Q6STROUP.js": "e42581a9d922e3f0a63fad948836d3954142d410",
     "/Portfolio-Artur/favicon-16x16.png": "4f80a8274ba2c5415f36d143a18a5dd7eac7fa17",
     "/Portfolio-Artur/favicon-32x32.png": "c83400360349b02f76a3be91d2fafc0086ce446d",
     "/Portfolio-Artur/favicon.ico": "13e6f0d217012195428a89334e0129e9c86d1997",
-    "/Portfolio-Artur/index.html": "9ebd2391f070814ba9cae6fc8d85033e6bb193dc",
-    "/Portfolio-Artur/main-IV34J6GZ.js": "bd548eab602e052b2f4398218e77db8f9837ac1f",
+    "/Portfolio-Artur/index.html": "b9449489ff54913db6fd2fce6779c9fc289864a8",
+    "/Portfolio-Artur/main-VARS7VBC.js": "ec8692ed1c86b57411626c06dd1143a9965147af",
     "/Portfolio-Artur/polyfills-EONH2QZO.js": "e61db933651ae257d0c246b446cd1f470be08f78",
     "/Portfolio-Artur/scripts-33S2GZ2B.js": "7d26f4d8bdd78043f98eb0009b867c5b7da82688",
     "/Portfolio-Artur/styles-EOAKSHM6.css": "57b42d561b0f2e197d89389f5f37a817739d5092"
